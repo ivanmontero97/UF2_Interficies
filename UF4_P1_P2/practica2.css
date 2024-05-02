@@ -1,0 +1,471 @@
+html{
+    width:100%;
+    height: 100%;
+    margin:0%;
+    padding:0%;
+   font-size: 16px;
+}
+body{
+    width:100%;
+    height: 100%;
+    margin:0%;
+    padding:0%;
+    font-size: 16px;
+    
+}
+.header{
+    width:100%;
+    height:7%;
+    padding:0%;
+    margin:0%;
+    background-color:black;
+    position:fixed;
+    top:0%;
+    opacity: 1;
+    z-index: 1;
+}
+.header > div{
+    height:100%;
+    width:11%;
+    float: right;
+    color:white;
+    background-color: black;
+}
+.header > div > a {
+ height: 100%;
+ width:100%;  
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+}
+a:hover{
+    background-color: grey;
+    transform:scale(1.10);
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+/* SUBHEADER */
+.subheader{
+    width:100%;
+    height: 50%;
+    background-image:url("Imagenes/restaurant-449952_1920.jpg") ;
+    background-size:cover;
+    background-position-y: center;
+}
+.tituloImg{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+}
+.tituloImg >h2 ,p{
+    margin-left: 5%;
+    animation-name: example;
+    animation-duration: 1s;
+    position:relative;
+}
+@keyframes example {
+    0%   {color:transparent;top:35px;}
+    25%  {color:orange;top:20px;}
+    50%  {color:rgb(246, 192, 93);top:10px;}
+    100% {color: white;top:0px;}
+}
+
+/* SOBRE NOSOTROS */
+.containerSobreNosotros{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerSobreNosotros > h2 {
+    height: 5%;
+    width: 80%;
+    margin:0px;
+}
+.sobreNosotros{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    display:none;
+}
+.containerSobreNosotros>h2:hover{
+   cursor:pointer;
+}
+.sobreNosotros > div {
+    height: 40%;
+}
+.imgDerecha{
+    width: 35%;
+}
+.imgIzquierda{
+    width: 35%;
+}
+.pDerecha{
+    width: auto;
+}
+.pIzquierda{
+    width: auto;
+   
+}
+.sobreNosotros img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border:0px;
+    margin: 0%;
+}
+ .pDerecha{
+   margin-bottom: 1%;
+}
+
+.imgIzquierda {
+    float:left;
+    margin-right:2%;
+}
+.imgDerecha{
+    float:right;
+    margin-left:2%;
+}
+
+/* CARTA */
+.containerCarta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerCarta > h2 {
+    height: 5%;
+    width: 80%;
+}
+.carta{
+    width: 80%;
+    height: auto;
+    display:grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows:0.5fr 1fr 1fr 1fr 1fr;
+    font-size:16px;
+}
+
+.carta .menu{
+    margin-bottom:2%;
+    background-color: black;
+    grid-column: 1/4;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #324AB2;
+    font-size:2vh;
+}
+.carta .Menu1 {
+    background-color: white;
+    border:2px solid #324AB2;
+    margin:2%;
+    color:black;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta .Menu2 {
+    margin:2%;
+    background-color: white;
+    border:2px solid  #324AB2;
+    color:black;
+    grid-row: 4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carta .contenido1 {
+    color: black;
+    grid-row:2/3;
+    grid-column:2/4 ;
+}
+
+.carta .contenido2 {
+    color: black;
+    grid-row:4/5;
+    grid-column:2/4 ;
+}
+.carta .pasta , .carta .entrantes , .carta .carne , .carta .pescado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    width: auto;
+    height: auto;
+}
+.carta .pasta {
+    grid-row: 3/4 ;
+    grid-column:2/3 ;
+}
+.carta .entrantes{ 
+    grid-row:3/4;
+    grid-column:3/4 ;
+} 
+.carta .carne  {
+    grid-row:5/6;
+    grid-column:2/3 ;
+}
+.carta .pescado  {
+    grid-row:5/6;
+    grid-column:3/4 ;
+}  
+
+.carta .pasta img {
+    width:90%;
+    height: auto;
+    border-radius: 2%;
+    padding:1%;
+    border:1px solid black;
+}
+
+.carta .entrantes img {
+    width:90%;
+    height: auto;
+    border-radius: 2%;
+    padding:1%;
+    border:1px solid black;
+
+}
+
+.carta .carne img {
+    width:90%;
+    height: auto;
+    border-radius: 2%;
+    padding:1%;
+    border:1px solid black;
+
+
+}
+
+.carta .pescado img {
+    width:90%;
+    height: auto;
+    padding:1%;
+    border:1px solid black;
+}
+
+.containerGaleria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerGaleria > h2 {
+    height: auto;
+    width: 80%;
+    margin-top: 5%;
+
+}
+.galeria{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gal {
+    width: calc(25% - 1%);
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    margin:0.25%;
+
+}
+.galBordes {
+    
+        width: calc(25% - 1%);
+        height: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+        margin:0.25%;
+    
+    
+}
+.gal > img {
+    width: 98%;
+    height:98%;
+}
+.galBordes > img {
+    filter: saturate(25%); /* Desaturar la imagen */
+    width: 98%;
+    height:98%;
+}
+
+.footer {
+    height: 5%;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+}
+.correo {
+    margin-right: 10px;
+}
+.restaurante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La media query no se aplica hasta los 783 pixeles si aplico max-width 800px, por los 17 pixeles de ancho de la barra del navegador 
+, para que pueda aplicar apartir de 800 se deberían poner max-width:817px */
+@media only screen and (max-width: 800px){ 
+    .containerSobreNosotros{
+        height: auto;
+    }
+    .containerSobreNosotros > h2{
+        margin:2%;
+    }
+    .sobreNosotros > div {
+        width:auto;
+        margin:2%;
+    }
+    .imgIzquierda , .imgDerecha{
+        float:none;
+    }
+    
+    .carta{
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows:0.25fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    .carta .Menu1{
+        grid-row:2/5;
+    }
+    .carta .Menu2{
+        grid-row:5/8;
+    }
+    .carta .pasta {
+        grid-row: 3/4 ;
+        grid-column:2/4 ;
+    }
+   .carta .entrantes{ 
+        grid-row:4/5;
+        grid-column:2/4 ;
+    } 
+    .carta .contenido2 {
+      
+        grid-row:5/6;
+        grid-column:2/4 ;
+    }
+    .carta .carne  {
+        grid-row:6/7;
+        grid-column:2/4 ;
+    }
+    .carta .pescado  {
+        grid-row:7/8;
+        grid-column:2/4 ;
+    }  
+    .galeria > div {
+        width:calc(50% - 2%);
+        margin:0.5%;
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .containerSobreNosotros{
+        height: auto;
+    }
+    .containerSobreNosotros > h2{
+        margin:2%;
+    }
+    .sobreNosotros > div {
+        width:auto;
+        margin:2%;
+    }
+    .imgIzquierda , .imgDerecha{
+        float:none;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+    }
+    .carta > div{
+       width: 100%;
+    
+    }
+    .carta .Menu1{
+    
+    }
+    .carta .Menu2{
+    
+    }
+    .carta .pasta {
+
+    }
+   .carta .entrantes{ 
+        
+    } 
+    .carta .contenido2 {
+      
+    }
+    .carta .carne  {
+
+    }
+    .carta .pescado  {
+  
+    }  
+    .galeria > div {
+        width:calc(100% - 2%);
+        margin:0.5%;
+    }
+}
+
+.trans > img {
+    transition: scale 2s,rotate 1.5s,filter 2s;
+}
+.trans > img:hover{
+    scale:1.25;
+    rotate:20deg;
+    filter:grayscale(75%);
+}
+.trans{
+    overflow: hidden ;
+}
+
+.trans2 {
+    transition: border-top 1s,transform 2s, width 2s,;
+    overflow: hidden;
+}
+.trans2:hover{
+    border-top:2px solid blue;
+    transform: skewY(20deg);
+    width:25%;
+}
+
+
+  
