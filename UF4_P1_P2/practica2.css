@@ -16,13 +16,14 @@ body{
 .header{
     width:100%;
     height:7%;
-    padding:0%;
     margin:0%;
     background-color:black;
     position:fixed;
     top:0%;
     opacity: 1;
     z-index: 1;
+    padding: 25px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
 }
 .header > div{
     height:100%;
@@ -342,6 +343,73 @@ a:hover{
     align-items: center;
 }
 
+.containerVideo{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.containerVideo > h2 {
+    height: auto;
+    width: 80%;
+    margin-top: 0%;
+
+}
+
+.video{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position:relative;
+}
+
+#myVideo{
+    margin: 0%;
+    width:30%;
+    height:100%;
+    position:absolute;
+    display:block;
+}
+.contentVideo{
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width:30%;
+    height:15%;
+    position:absolute;
+    display:flex;
+    align-content: left ;
+    justify-content:flex-end;
+}
+ .contentVideo > button{
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    border:0px;
+}
+.contentVideo > button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    border:0px;
+    cursor: pointer;
+} 
+
+#logo  {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
 /* La media query no se aplica hasta los 783 pixeles si aplico max-width 800px, por los 17 pixeles de ancho de la barra del navegador 
 , para que pueda aplicar apartir de 800 se deberían poner max-width:817px */
 @media only screen and (max-width: 800px){ 
